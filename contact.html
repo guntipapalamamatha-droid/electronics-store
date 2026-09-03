@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - MAMATHA ELECTRONICS</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="logo">
+      <div class="m-logo">M</div>
+      <div class="logo-text">
+        <h2>MAMATHA</h2>
+        <small>ELECTRONICS</small>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products...">
+      <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="header-icons">
+      <a href="#" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+      <a href="cart.html" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="products.html">PRODUCTS</a></li>
+      <li><a href="offers.html">OFFERS</a></li>
+      <li><a href="cart.html">CART</a></li>
+      <li><a href="checkout.html">CHECKOUT</a></li>
+      <li><a href="contact.html" class="active">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="contact-hero">
+    <div class="hero-overlay">
+      <h1>GET IN TOUCH WITH US</h1>
+      <p>Have questions about products, warranty, or delivery? We are here to help!</p>
+    </div>
+  </section>
+
+  <!-- Quick Info Cards -->
+  <section class="contact-info-cards">
+    <div class="info-card">
+      <i class="fa-solid fa-location-dot icon-gold"></i>
+      <h3>Visit Our Store</h3>
+      <p>Main Road, Electronics Bazaar,<br>Hyderabad, Telangana - 500001</p>
+    </div>
+
+    <div class="info-card">
+      <i class="fa-solid fa-headset icon-gold"></i>
+      <h3>Call / WhatsApp</h3>
+      <p>Phone: +91 98765 43210<br>WhatsApp: +91 98765 43210</p>
+    </div>
+
+    <div class="info-card">
+      <i class="fa-solid fa-clock icon-gold"></i>
+      <h3>Store Timings</h3>
+      <p>Monday - Saturday: 9:30 AM - 9:30 PM<br>Sunday: 10:00 AM - 8:00 PM</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Centered Support Image Grid -->
+  <section class="contact-section">
+    
+    <!-- Left: Contact Form -->
+    <div class="contact-form-box">
+      <h2><i class="fa-solid fa-paper-plane"></i> Send Us A Message</h2>
+      <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+
+      <form onsubmit="handleContactSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name *" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Phone Number *" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="email" placeholder="Email Address *" required>
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="Subject (Product inquiry, Warranty, etc.)">
+        </div>
+
+        <div class="form-group">
+          <textarea placeholder="Write your message here... *" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit-contact">
+          SEND MESSAGE <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+
+    <!-- Right: Customer Support Visual -->
+    <div class="contact-visual-box">
+      <div class="image-wrapper" style="background-color: #1e293b; border: 1px solid #334155; border-radius: 12px; overflow: hidden;">
+        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=800&auto=format&fit=crop" alt="Customer Support Electronics" style="width: 100%; height: 280px; object-fit: cover; object-position: center; display: block;">
+        <div class="image-caption" style="padding: 20px; text-align: center; background-color: #1e293b;">
+          <h4 style="color: #f59e0b; margin: 0 0 6px 0; font-size: 1.1rem;">24/7 Dedicated Support</h4>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0;">Our expert team is always ready to assist you with electronics guidance.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Google Map Location Section -->
+  <section class="map-section">
+    <h2><i class="fa-solid fa-map-location-dot icon-gold"></i> Find Us On Google Maps</h2>
+    <div class="map-container">
+  <iframe 
+    src="https://maps.google.com/maps?q=Charminar,%20Hyderabad&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+    width="100%" 
+    height="350" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px 0; width: 100%;">
+    <p style="margin: 0;">&copy; 2026 Mamatha Electronics. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Link to main.js -->
+  <script src="js/main.js"></script>
+</body>
+</html>

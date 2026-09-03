@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Shopping Cart - M SATHISH ELECTRONICS</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="top-header">
+    <div class="logo">
+      <div class="m-logo">M</div>
+      <div class="logo-text">
+        <h2>MAMATHA</h2>
+        <small>ELECTRONICS</small>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search products...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="header-icons">
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="#"><i class="fa-regular fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="products.html">PRODUCTS</a></li>
+      <li><a href="offers.html">OFFERS</a></li>
+      <li><a href="cart.html" class="active">CART</a></li>
+      <li><a href="checkout.html">CHECKOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Cart Section -->
+  <section class="cart-container">
+    <h1 class="cart-title">YOUR SHOPPING CART</h1>
+
+    <div class="cart-layout">
+      <!-- Left: Cart Items List (Dynamic) -->
+      <div class="cart-items-wrapper" id="cart-items">
+        <!-- Products will load here via Javascript -->
+      </div>
+
+      <!-- Right: Price Summary Box -->
+      <div class="cart-summary">
+        <h3>ORDER SUMMARY</h3>
+        <hr class="summary-divider">
+        
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">₹0</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery Charge</span>
+          <span class="free-text">FREE</span>
+        </div>
+        
+        <hr class="summary-divider">
+        
+        <div class="summary-row total-row">
+          <span>Total Amount</span>
+          <span id="cart-total">₹0</span>
+        </div>
+
+        <a href="checkout.html" class="btn-checkout">PROCEED TO CHECKOUT <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="products.html" class="btn-continue">Continue Shopping</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Shopping Cart Specific Footer -->
+  <footer style="background-color: #0b0f19; color: #94a3b8; padding: 50px 20px 30px; margin-top: 60px; font-family: inherit;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+      
+      <!-- Column 1: Secure Checkout Info -->
+      <div>
+        <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 16px; font-weight: 700;">100% SECURE CHECKOUT</h3>
+        <p style="font-size: 0.88rem; line-height: 1.6; color: #94a3b8; margin-bottom: 15px;">
+          Your order and personal details are encrypted and completely safe with us.
+        </p>
+        <div style="display: flex; gap: 15px; font-size: 1.6rem; color: #cbd5e1;">
+          <i class="fa-brands fa-cc-visa" title="Visa"></i>
+          <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fa-solid fa-credit-card" title="UPI & Banking"></i>
+          <i class="fa-solid fa-shield-halved" style="color: #f59e0b;" title="SSL Secured"></i>
+        </div>
+      </div>
+
+      <!-- Column 2: Order Guarantees -->
+      <div>
+        <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 16px; font-weight: 700;">ORDER GUARANTEE</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; line-height: 2.2; color: #cbd5e1;">
+          <li><i class="fa-solid fa-circle-check" style="color: #f59e0b; margin-right: 8px;"></i> Free & Safe Delivery</li>
+          <li><i class="fa-solid fa-circle-check" style="color: #f59e0b; margin-right: 8px;"></i> Easy Return Policy</li>
+          <li><i class="fa-solid fa-circle-check" style="color: #f59e0b; margin-right: 8px;"></i> Official Brand Warranty</li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Cart Support -->
+      <div>
+        <h3 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 16px; font-weight: 700;">NEED HELP WITH CART?</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-size: 0.88rem; line-height: 2.2; color: #cbd5e1;">
+          <li><i class="fa-solid fa-phone" style="color: #f59e0b; margin-right: 10px;"></i> Call Us: +91 98765 43210</li>
+          <li><i class="fa-solid fa-envelope" style="color: #f59e0b; margin-right: 10px;"></i> support@mamathaelectronics.com</li>
+          <li><i class="fa-solid fa-headset" style="color: #f59e0b; margin-right: 10px;"></i> Live Support (10 AM - 8 PM)</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div style="max-width: 1200px; margin: 0 auto; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.05); text-align: center; font-size: 0.82rem; color: #64748b;">
+      <p>&copy; 2026 Mamatha Electronics. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Javascript Connections -->
+  <script src="js/product-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
