@@ -1,0 +1,416 @@
+/* ==========================================
+   CONTACT PAGE STYLES (FINAL PERFECT FIT)
+   ========================================== */
+
+/* Hero Banner */
+.contact-hero {
+  background: url('https://images.unsplash.com/photo-1550009158-9ebf69173e03?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+  height: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(15, 23, 42, 0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  color: #f59e0b;
+  font-size: 2rem;
+  margin: 0 0 8px 0;
+}
+
+.hero-overlay p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Quick Info Cards */
+.contact-info-cards {
+  max-width: 1160px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  text-align: center;
+}
+
+.icon-gold {
+  color: #f59e0b;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.info-card h3 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Main Section Layout */
+.contact-section {
+  max-width: 1160px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.contact-form-box {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.contact-form-box h2 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin: 0 0 6px 0;
+}
+
+.contact-form-box p {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  margin-bottom: 25px;
+}
+
+.contact-form-box input[type="text"],
+.contact-form-box input[type="tel"],
+.contact-form-box input[type="email"],
+.contact-form-box textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #ffffff;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+}
+
+.contact-form-box input:focus,
+.contact-form-box textarea:focus {
+  border-color: #f59e0b;
+}
+
+.btn-submit-contact {
+  width: 100%;
+  padding: 14px;
+  background-color: #f59e0b;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit-contact:hover {
+  background-color: #d97706;
+}
+
+/* Right Visual Box (Centered Dark Theme Image Fix) */
+.contact-visual-box {
+  width: 100%;
+}
+
+.image-wrapper {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center; /* ఇమేజ్ ని కాంబినేషన్ బాక్స్ కి మధ్యలోకి అమరుస్తుంది */
+  display: block;
+}
+
+.image-caption {
+  padding: 20px;
+  text-align: center;
+  background-color: #1e293b;
+}
+
+.image-caption h4 {
+  color: #f59e0b;
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+
+.image-caption p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Map Section */
+.map-section {
+  max-width: 1160px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+}
+
+.map-section h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+/* ==========================================
+   CHECKOUT PAGE STYLES (MATCHES YOUR HTML)
+   ========================================== */
+
+.checkout-container {
+  max-width: 1160px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 10px;
+}
+
+.checkout-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.form-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  margin-bottom: 25px;
+}
+
+.form-card h3 {
+  color: #f59e0b;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Form Inputs Layout */
+.form-card .form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-card .form-group {
+  margin-bottom: 15px;
+}
+
+.form-card input, 
+.form-card textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-card input:focus, 
+.form-card textarea:focus {
+  border-color: #f59e0b;
+}
+
+/* Payment Radio Options */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 14px 15px;
+  background-color: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.payment-option:hover {
+  border-color: #f59e0b;
+}
+
+.payment-option input[type="radio"] {
+  width: auto;
+  margin-right: 12px;
+  accent-color: #f59e0b;
+}
+
+.payment-option span {
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+/* Right Summary Card */
+.summary-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.summary-card h2 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.total-row {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-top: 1px solid #334155;
+  padding-top: 12px;
+  margin-top: 15px;
+}
+
+.btn-place-order {
+  width: 100%;
+  padding: 14px;
+  background-color: #f59e0b;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s ease;
+}
+
+.btn-place-order:hover {
+  background-color: #d97706;
+}
+
+/* Help & Support Banner */
+.support-banner {
+  max-width: 1160px;
+  margin: 20px auto 50px;
+  padding: 25px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.support-banner h3 {
+  color: #f59e0b;
+  margin: 0 0 8px 0;
+}
+
+.support-banner p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.support-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-support {
+  padding: 10px 20px;
+  background-color: #0f172a;
+  color: #38bdf8;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.btn-support:hover {
+  border-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.btn-whatsapp {
+  color: #22c55e;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .checkout-form {
+    grid-template-columns: 1fr;
+  }
+  .form-card .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
